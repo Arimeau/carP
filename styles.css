@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "SF Pro Text";
+    src: url(fonts/SFProText-Regular.ttf);
+    /* font-weight: 500; */
+    font-style: normal;
+    display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url(fonts/SFProText-Light.ttf);
+    /* font-weight: 500; */
+    font-style: normal;
+    display: swap;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(153deg, rgba(249, 236, 81, 0.5) 0%, rgba(255, 66, 168, 0.500437675070028) 50%, rgba(0, 255, 235, 0.5) 100%);
+}
+
+.main {
+    font-family: "SF Pro Text";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 24px;
+    max-width: 1440px;
+}
+
+.addTrack {
+    display: flex;
+    
+}
+
+h3 {
+    font-size: 24px;
+    margin: 10px 8px 4px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 20px;
+    margin: 4px 8px 10px;
+    font-weight: 100;
+}
+
+.cards__tracks {
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
+    transition-duration: 200ms;
+    padding: 0px 16px;
+    border-radius: 8px;
+    flex-direction: column;
+    width: 300px;
+    display: flex;
+}
+
+input {
+    font-size: 20px;
+    padding: 8px;
+    margin: 4px;
+    border-radius: 8px;
+    border: 0px;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    transition-duration: 200ms;
+    font-family: "SF Pro Text";
+}
+
+button {
+    font-size: 20px;
+    padding: 8px;
+    margin: 4px;
+    border-radius: 8px;
+    border: 0px;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    transition-duration: 200ms;
+    font-family: "SF Pro Text";
+}
+
+#musicContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 40px;
+    justify-content: center;
+}
+
+.cards__tracks:hover {
+    transform: scale(1.05);
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+input:hover {
+    transform: scale(1.05);
+}
+
+html {
+    height: 100%;
+}
